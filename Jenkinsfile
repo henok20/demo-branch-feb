@@ -2,13 +2,11 @@ pipeline {
     
 agent { node { label 'master' } } 
 
- }
 stages {
-  
-    stage('Read Readme.md file') {
+   stage('Read demo file') {
             steps {
-                sh 'cat README.md'
+                sh 'cat demo.txt'
             }
         }
-  
+    }
 }
